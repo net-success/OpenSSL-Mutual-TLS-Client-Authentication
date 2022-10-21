@@ -107,7 +107,7 @@ class userCert
                 throw new Exception('Error: Please enter valid Common Name');
             } else if (!preg_match('/^\\d{1,20}$/', $this->postalCode)) {
                 $this->postalCode = null;
-                throw new Exception('Error: Only digits ate allowed');
+                throw new Exception('Error: Only digits are allowed');
             } else {
                 $this->postalCode = preg_replace('/\s+/', '', $this->postalCode);
             }
