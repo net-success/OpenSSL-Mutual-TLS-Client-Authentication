@@ -1,0 +1,9 @@
+[ req_ext ]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer
+keyUsage=critical,keyCertSign,cRLSign
+basicConstraints=critical,CA:true,pathlen:1
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.0 = your_domain.com

@@ -1,0 +1,6 @@
+[ req_ext ]
+extendedKeyUsage=clientAuth
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.0 = your_domain.com
