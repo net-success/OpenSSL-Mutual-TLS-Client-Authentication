@@ -1,8 +1,6 @@
 # OpenSSL Mutual TLS Client Authentication
 
-### php commanline tool for OpenSSL certificate generation
-
-This repository should help you to authenticate users by client certificate.
+### php commandline tool for OpenSSL certificate generation
 
 ## Installation
 
