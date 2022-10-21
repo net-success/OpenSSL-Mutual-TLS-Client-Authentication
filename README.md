@@ -20,13 +20,6 @@ Actually you only have to change the **[alt_names]** DNS.
 #### tlsCa.cnf
 
 ```bash
-[ req_ext ]
-subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid:always,issuer
-keyUsage=critical,keyCertSign,cRLSign
-basicConstraints=critical,CA:true,pathlen:1
-subjectAltName = @alt_names
-
 [ alt_names ]
 DNS.0 = your_domain.com
 ```
@@ -34,10 +27,6 @@ DNS.0 = your_domain.com
 #### tlsClient.cnf
 
 ```bash
-[ req_ext ]
-extendedKeyUsage=clientAuth
-subjectAltName = @alt_names
-
 [ alt_names ]
 DNS.0 = your_domain.com
 ```
